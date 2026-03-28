@@ -1,16 +1,30 @@
-# React + Vite
+# ⚡ React Component Collection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una colección de componentes interactivos desarrollados con **React + Vite**, enfocada en buenas prácticas, lógica centralizada y escalabilidad.
 
-Currently, two official plugins are available:
+## 🕹️ Componentes Actuales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Counter (Contador Inteligente)
 
-## React Compiler
+Un contador que va más allá de lo básico, implementando un manejador de acciones maestro.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Lógica Centralizada:** Uso de una única función `handleCounter` para procesar incrementos, decrementos, resets y valores aleatorios.
+- **Estado Seguro:** Implementación del patrón de actualización funcional (`setCounter(prev => prev + n)`) para evitar colisiones en renders rápidos.
+- **Azar Dinámico:** Generación de valores aleatorios calculados en el momento de la ejecución.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📋 Tabla de Componentes
+
+| Componente                       | Descripción Técnica                                                                                                         | Estado        |
+| :------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------ |
+| **[Counter](./src/Counter.jsx)** | Lógica centralizada (`Master Handler`), actualizaciones funcionales de estado y generación de valores aleatorios dinámicos. | ✅ Completado |
+| **Form / Login**                 | Manejo de formularios controlados, validación de esquemas y gestión de errores en tiempo real.                              | ⏳ En proceso |
+| **API Gallery**                  | Consumo de servicios externos (REST API) con `useEffect`, manejo de estados de carga (Loading) y errores.                   | 📅 Planeado   |
+
+## 🛠️ Tecnologías
+
+- React 18
+- Vite
+- CSS Moderno
+- Git / SSH para control de versiones
