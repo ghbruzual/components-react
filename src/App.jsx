@@ -1,4 +1,5 @@
 import Counter from "./Counter";
+import Filter from "./Filter";
 
 function App() {
   return (
@@ -10,9 +11,10 @@ function App() {
           <p>by Ghbruzual - fullstack developer</p>
         </div>
       </div>
-
       <hr />
       <Counter />
+      <hr />
+      <Filter/>
       <hr />
     </div>
   );
