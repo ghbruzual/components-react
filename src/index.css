@@ -6,9 +6,30 @@
   box-sizing: border-box;
 }
 hr {
-  margin-block: 3rem;
+  margin-block: 1.5rem;
 }
 
+.container {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.container h1 {
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.tittle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 64rem;
+}
+
+.tittle img {
+  width: 4rem;
+  height: auto;
+}
 /* -------------------- Counter --------------------  */
 
 .counter-section {
