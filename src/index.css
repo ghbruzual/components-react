@@ -1,0 +1,63 @@
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+hr {
+  margin-block: 3rem;
+}
+
+/* -------------------- Counter --------------------  */
+
+.counter-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 21rem;
+  max-width: 30rem;
+  border: 1px solid rgb(13, 13, 189);
+  box-shadow: 0rem 1rem 1rem rgba(13, 13, 189, 0.3);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: auto;
+  gap: 1rem;
+}
+
+.counter-section p {
+  border: none;
+  color: rgb(13, 13, 189);
+  font-weight: 700;
+  height: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  width: 10rem;
+}
+.counter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  height: 2rem;
+}
+
+.counter-buttons * {
+  background-color: #f4f4f4;
+  border: 1px solid rgb(13, 13, 189);
+  box-shadow: inset 0rem 0.2rem 0.5rem rgba(13, 13, 189, 0.3);
+  width: 2.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.counter-buttons *:active {
+  background-color: #ffffff;
+  box-shadow: inset 0.1rem 0.1rem 0.5rem rgba(13, 13, 189, 0.1);
+}
+
+.counter-buttons :nth-child(3),
+.counter-buttons :nth-child(4) {
+  width: 4.3rem;
+}
+
+/* -------------------- Counter --------------------  */
