@@ -1,5 +1,6 @@
 import Counter from "./Counter";
 import Filter from "./Filter";
+import ShoppingCart from "./ShoppingCart";
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
           <p>by Ghbruzual - fullstack developer</p>
         </div>
       </div>
+      <hr />
+      < ShoppingCart />
       <hr />
       <Counter />
       <hr />

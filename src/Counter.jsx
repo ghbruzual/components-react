@@ -1,7 +1,7 @@
 import React from "react";
 
-export default function Counter() {
-  let [counter, setCounter] = React.useState(0);
+function Counter() {
+  const [counter, setCounter] = React.useState(0);
 
   function handleCounter(number) {
     if (number === "random") {
@@ -30,3 +30,5 @@ export default function Counter() {
     </div>
   );
 }
+
+export default Counter
