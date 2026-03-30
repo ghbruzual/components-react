@@ -1,30 +1,41 @@
-# ⚡ React Component Collection
+# 🚀 React Component Collection
 
-Una colección de componentes interactivos desarrollados con **React + Vite**, enfocada en buenas prácticas, lógica centralizada y escalabilidad.
+A modular collection of interactive components developed with **React + Vite**, focusing on scalability, complex state management, and Frontend architecture best practices.
 
-## 🕹️ Componentes Actuales
+## 🕹️ Featured Components
 
-### 1. Counter (Contador Inteligente)
+### 1. Counter (Smart Counter)
+A component that manages multiple arithmetic operations through a **Master Action Handler**.
+* **Centralized Logic:** A single function to process increments, resets, and random values.
+* **State Safety:** Implementation of the functional update pattern (`prev => prev + n`) to ensure state integrity.
 
-Un contador que va más allá de lo básico, implementando un manejador de acciones maestro.
-
-- **Lógica Centralizada:** Uso de una única función `handleCounter` para procesar incrementos, decrementos, resets y valores aleatorios.
-- **Estado Seguro:** Implementación del patrón de actualización funcional (`setCounter(prev => prev + n)`) para evitar colisiones en renders rápidos.
-- **Azar Dinámico:** Generación de valores aleatorios calculados en el momento de la ejecución.
+### 2. Pokémon Filter (Data Management)
+A dynamic search engine that consumes a Pokémon catalog and allows filtering by type.
+* **Data Cleaning:** Use of `Set` and `flatMap` to automatically generate a list of unique types directly from the JSON source.
+* **Efficient Filtering:** Logic executed during render to avoid redundant states and ensure a **unidirectional data flow**.
 
 ---
 
-## 📋 Tabla de Componentes
+## 📋 Development Roadmap
 
-| Componente                       | Descripción Técnica                                                                                                         | Estado        |
-| :------------------------------- | :-------------------------------------------------------------------------------------------------------------------------- | :------------ |
-| **[Counter](./src/Counter.jsx)** | Lógica centralizada (`Master Handler`), actualizaciones funcionales de estado y generación de valores aleatorios dinámicos. | ✅ Completado |
-| **Form / Login**                 | Manejo de formularios controlados, validación de esquemas y gestión de errores en tiempo real.                              | ⏳ En proceso |
-| **API Gallery**                  | Consumo de servicios externos (REST API) con `useEffect`, manejo de estados de carga (Loading) y errores.                   | 📅 Planeado   |
+| Component | Technical Description | Status |
+| :--- | :--- | :--- |
+| **[Counter](./src/Counter.jsx)** | Master Handler and functional state updates. | ✅ Completed |
+| **[Filter](./src/Filter.jsx)** | Duplicate removal with `Set` and dynamic filtering. | ✅ Completed |
+| **Inventory & Cart** | **Controlled forms**, data validation, and complex array management (CRUD). | ⏳ In Progress |
 
-## 🛠️ Tecnologías
+---
 
-- React 18
-- Vite
-- CSS Moderno
-- Git / SSH para control de versiones
+## 🛠️ Tech Stack
+* **Core:** React 18
+* **Build Tool:** Vite
+* **Version Control:** Git via SSH
+* **Styling:** Modern CSS (Grid & Flexbox) with responsive design using `clamp()`.
+
+---
+
+## ⚙️ Installation and Setup
+
+1. Clone the repository via SSH:
+   ```bash
+   git clone git@github.com:ghbruzual/components-react.git
